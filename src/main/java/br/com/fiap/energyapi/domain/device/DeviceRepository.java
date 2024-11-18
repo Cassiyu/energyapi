@@ -1,4 +1,6 @@
 package br.com.fiap.energyapi.domain.device;
 
-public class DeviceRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DeviceRepository extends JpaRepository<Device, Long> {
 }

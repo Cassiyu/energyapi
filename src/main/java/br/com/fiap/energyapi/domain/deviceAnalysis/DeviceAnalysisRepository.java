@@ -1,4 +1,8 @@
 package br.com.fiap.energyapi.domain.deviceAnalysis;
 
-public class DeviceAnalysisRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DeviceAnalysisRepository extends JpaRepository<DeviceAnalysis, Long> {
 }

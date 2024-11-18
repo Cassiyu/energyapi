@@ -1,4 +1,8 @@
 package br.com.fiap.energyapi.domain.energyMeter;
 
-public class EnergyMeterRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EnergyMeterRepository extends JpaRepository<EnergyMeter, Long> {
 }
